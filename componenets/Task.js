@@ -63,15 +63,16 @@ export default function TaskCard({ task, onDelete, onUpdate }) {
                 onChange={handleChange}
                 className="w-full p-2 border rounded text-black"
               />
+              
               <button
                 type="submit"
-                className="bg-green-500 text-white px-4 py-2 rounded cursor-pointer hover:scale-105 transition"
+                className="bg-green-500 text-white px-4 py-2 rounded cursor-pointer hover:scale-105 transition "
               >
                 Save
               </button>
               <button
                 type="submit"
-                className="bg-red-500 text-white px-4 py-2 rounded cursor-pointer hover:scale-105 transition"
+                className="bg-red-500 text-white px-4 py-2 rounded cursor-pointer hover:scale-105 transition m-2"
                 onClick={() => setEditMode(false)}
               >
                 Cancel
