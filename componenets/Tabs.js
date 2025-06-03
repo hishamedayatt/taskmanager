@@ -10,7 +10,7 @@ export default function Tabs({ activeTab, onTabChange }) {
         <button
           key={tab}
           onClick={() => onTabChange(tab)}
-          className={`pb-2 text-lg ${
+          className={`pb-2 text-lg  cursor-pointer ${
             activeTab === tab
               ? "text-black border-b-4 border-green-300 font-semibold"
               : "text-gray-500"
