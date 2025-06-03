@@ -45,11 +45,14 @@ export default function Home() {
   return (
     <div className="min-h-screen p-6">
       <h1 className="text-4xl font-bold text-center mb-6 text-black">Task Manager</h1>
-      <Header activeTab={activeTab} />
-      <div className="flex justify-end mb-4">
+      
+      <div className="flex justify-between mb-4">
+        <Header activeTab={activeTab} />
+         <div className="flex mb-4">
         <button onClick={() => setShowModal(true)} className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
           + New Task
         </button>
+        </div>
       </div>
       <Tabs activeTab={activeTab} onTabChange={setActiveTab} />
       {tasks

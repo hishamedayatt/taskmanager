@@ -4,7 +4,8 @@ const tabNames = ["All", "Pending", "In Progress", "Completed"];
 
 export default function Tabs({ activeTab, onTabChange }) {
   return (
-    <div className="flex gap-6 border-b border-gray-300 mb-4">
+    <div className="flex flex-wrap gap-4 sm:gap-6 border-b border-gray-300 mb-4">
+
       {tabNames.map((tab) => (
         <button
           key={tab}

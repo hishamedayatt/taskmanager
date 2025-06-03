@@ -25,7 +25,8 @@ export default function TaskCard({ task, onDelete, onUpdate }) {
     setEditMode(false);
   };
   return (
-    <div className="bg-white rounded-xl shadow p-4 max-w-2xl mx-auto mt-4 cursor-pointer hover:bg-gray-50">
+    <div className="bg-white rounded-xl shadow p-4 sm:p-6 max-w-2xl mx-auto mt-4 cursor-pointer hover:bg-gray-50">
+
       {editMode ? (
         <div className="fixed inset-0 backdrop-blur-md bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
@@ -59,19 +60,19 @@ export default function TaskCard({ task, onDelete, onUpdate }) {
               <input
                 name="date"
                 type="date"
-                value={form.due}
+                value={form.date}
                 onChange={handleChange}
                 className="w-full p-2 border rounded text-black"
               />
               
               <button
-                type="submit"
+                type="button"
                 className="bg-green-500 text-white px-4 py-2 rounded cursor-pointer hover:scale-105 transition "
               >
                 Save
               </button>
               <button
-                type="submit"
+                type="button"
                 className="bg-red-500 text-white px-4 py-2 rounded cursor-pointer hover:scale-105 transition m-2"
                 onClick={() => setEditMode(false)}
               >
